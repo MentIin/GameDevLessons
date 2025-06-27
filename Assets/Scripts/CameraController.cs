@@ -11,5 +11,8 @@ public class CameraController : MonoBehaviour
         transform.Rotate(Vector3.left, Input.mousePositionDelta.y * 0.1f, Space.Self);
         
         
+        
+        
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 }
